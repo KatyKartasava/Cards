@@ -1,26 +1,45 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components';
+import { Card } from './assets/components/Card.styled';
+import { Image } from './assets/components/Image.styled';
+import { PageText } from './assets/components/PageText.styled';
+import { BoxButton, PageButton } from './assets/components/Button.styled';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Box>
+        <Card>
+          <Image />
+          <PageText headline>Headline</PageText>
+          <PageText textline>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</PageText>
+          <BoxButton>
+            <PageButton see>See more</PageButton>
+            <PageButton save>Save</PageButton>
+          </BoxButton>
+        </Card>
+        <Card color={"#fad7fb"}>
+          <Image />
+          <PageText headline>Headline</PageText>
+          <PageText textline>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</PageText>
+          <BoxButton>
+            <PageButton see>See more</PageButton>
+            <PageButton save>Save</PageButton>
+          </BoxButton>
+        </Card>
+      </Box>
     </div>
   );
 }
 
 export default App;
+
+const Box = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 10px;
+`
+
