@@ -19,7 +19,7 @@ function App() {
             <PageButton save>Save</PageButton>
           </BoxButton>
         </Card>
-        <Card color={"#fad7fb"}>
+        <Card color={"#fdffef"}>
           <Image />
           <PageText headline>Headline</PageText>
           <PageText textline>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</PageText>
