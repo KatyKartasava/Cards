@@ -1,9 +1,11 @@
+@use "./../../styles/variables" as *;
+
 .card {
   border-radius: 15px;
   max-width: 300px;
   box-shadow: 0 4px 20px 5px rgba(0, 0, 0, 0.1);
   background: #fff;
-  padding: 10px 10px 22px;
+  padding: $basePadding $basePadding 22px;
   font-family: "Inter", sans-serif;
 
   .image {
@@ -16,13 +18,13 @@
   .title {
     font-weight: 700;
     font-size: 16px;
-    color: #000;
+    color: $titleColor;
   }
 
   .text {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.6;
-    color: #abb3ba;
+    color: $textColor;
   }
 }
